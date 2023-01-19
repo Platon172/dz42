@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.header {
+  min-height: 1175px;
+  background: url("./images/photo1.png");
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  padding-top: 53px;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 618px) {
+  .header-menu {
+    flex-direction: column;
+    gap: 22px;
+  }
+}
+
+.header-link {
+  text-decoration: none;
+  color: #c6c0c0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.header-links {
+  display: flex;
+  gap: 55px;
+}
+
+@media (max-width: 370px) {
+  .header-links {
+    flex-direction: column;
+    gap: 17px;
+    text-align: center;
+  }
+}
+
+.card-header {
+  width: 24px;
+  height: 26px;
+}
+
+.services {
+  max-width: 867px;
+  margin-top: 138px;
+  height: 232px;
+}
+
+.header-title {
+  max-width: 706px;
+  font-size: 60px;
+  line-height: 70px;
+  color: white;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+  margin-top: 138px;
+}
+
+.header-title::after {
+  content: "";
+  display: block;
+  background: url("./icons/header-title.svg");
+  width: 400px;
+  height: 96px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: -20px;
+  right: -16px;
+  z-index: -1;
+}
+
+.header-subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  max-width: 867px;
+  text-align: center;
+  color: #c6c0c0;
+  margin: auto;
+  margin-top: 28px;
+}
+
+/* info */
+
+.info {
+  padding: 120px 0px;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 750px) {
+  .info-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
+.info-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  max-width: 368px;
+}
+
+.info-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 16px;
+  color: #2e2a2a;
+}
+
+.info-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #686161;
+}
+
+/* catalog */
+
+.catalog {
+}
+.catalog-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #2e2a2a;
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+.catalog-links {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 470px;
+  gap: 40px;
+}
+.catalog-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2e2a2a;
+}
